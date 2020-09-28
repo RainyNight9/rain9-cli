@@ -1,0 +1,38 @@
+{
+  "name": "rain9-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Rain9",
+  "license": "MIT",
+  "bin": {
+    "rain-create": "./bin/rain-create.js",
+    "rain": "./bin/rain.js"
+  },
+  "scripts": {
+    "build": "rm -rf lib && babel src --out-dir lib"
+  },
+  "babel": {
+    "preset": [
+      "env"
+    ],
+    "plugins": [
+      "transform-runtime"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.15.1",
+    "cross-spawn": "^6.0.5",
+    "fs-extra": "^6.0.1",
+    "react-dev-utils": "^5.0.1",
+    "semver": "^5.5.0",
+    "through2": "^2.0.3",
+    "tmp": "^0.0.33",
+    "vinyl-fs": "^3.0.3"
+  }
+}
